@@ -11,6 +11,7 @@ public class Song {
         mSongName = songName;
         mArtistName = artistName;
         mAlbumArt = albumArt;
+
     }
 
     public String getSongName(){
@@ -24,4 +25,6 @@ public class Song {
     public int getAlbumArt() {
         return mAlbumArt;
     }
+
+
 }
