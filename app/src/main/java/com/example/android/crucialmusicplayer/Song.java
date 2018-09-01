@@ -1,7 +1,5 @@
 package com.example.android.crucialmusicplayer;
 
-import android.media.Image;
-
 public class Song {
     private String mSongName;
     private String mArtistName;

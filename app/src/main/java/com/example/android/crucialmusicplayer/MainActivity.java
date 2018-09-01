@@ -1,12 +1,11 @@
 package com.example.android.crucialmusicplayer;
 
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
-import android.view.View.OnClickListener;
-import android.content.Intent;
-import android.view.View;
-import android.os.Bundle;
-import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
