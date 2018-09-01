@@ -5,9 +5,9 @@ import android.media.Image;
 public class Song {
     private String mSongName;
     private String mArtistName;
-    private Image mAlbumArt;
+    private int mAlbumArt;
 
-    public Song(String songName,String artistName, Image albumArt){
+    public Song(String songName,String artistName, int albumArt){
         mSongName = songName;
         mArtistName = artistName;
         mAlbumArt = albumArt;
@@ -21,7 +21,7 @@ public class Song {
         return mArtistName;
     }
 
-    public Image getAlbumArt() {
+    public int getAlbumArt() {
         return mAlbumArt;
     }
 }

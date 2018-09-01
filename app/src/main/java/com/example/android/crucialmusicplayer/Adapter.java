@@ -14,8 +14,9 @@ import java.util.ArrayList;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-public class Adapter extends ArrayAdapter<Song> songs {
-    public Adapter(Activity context, ArrayList<Song>){
+public class Adapter extends ArrayAdapter<Song> {
+
+    public Adapter(Activity context, ArrayList<Song> songs){
         super(context,0,songs);
     }
 
@@ -33,6 +34,10 @@ public class Adapter extends ArrayAdapter<Song> songs {
         Song currentArtist = getItem(position);
         Song currentAlbum = getItem(position);
 
+        ImageView albumArt = listItemView.findViewById(R.id.albumArt);
+
+        albumArt.setImageResource((currentAlbum.getAlbumArt()));
+
         TextView songName = listItemView.findViewById(R.id.songTittle);
 
         songName.setText(currentSong.getSongName());
@@ -41,9 +46,7 @@ public class Adapter extends ArrayAdapter<Song> songs {
 
         songArtist.setText(currentArtist.getArtistName());
 
-        ImageView albumArt = listItemView.findViewById(R.id.albumArt);
 
-        albumArt.setImageDrawable((currentAlbum.getAlbumArt());
 
 
         return listItemView;
