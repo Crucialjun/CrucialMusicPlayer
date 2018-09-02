@@ -9,8 +9,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-        tools:ignore="GoogleAppIndexingWarning">
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        android:fullBackupContent="@xml/backup_descriptor">
         <activity android:name=".MainActivity">
 
             <intent-filter>
@@ -20,10 +21,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".SongsActivity"
-            android:theme="@style/Theme.AppCompat.Light"
+            android:theme="@style/songList"
             android:label="SONGS"
             android:parentActivityName=".MainActivity"
-            >
+            tools:targetApi="jelly_bean">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity">
@@ -32,10 +33,10 @@
 
         </activity>
         <activity android:name=".ArtistsActivity"
-            android:theme="@style/Theme.AppCompat.Light"
+            android:theme="@style/songList"
             android:label="ARTISTS"
             android:parentActivityName=".MainActivity"
-            >
+            tools:targetApi="jelly_bean">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity">
@@ -43,6 +44,19 @@
             </meta-data>
 
         </activity>
+        <activity android:name=".AlbumsActivity"
+            android:theme="@style/songList"
+            android:label="ALBUMS"
+            android:parentActivityName=".MainActivity"
+            tools:targetApi="jelly_bean">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity">
+
+            </meta-data>
+
+        </activity>
+
 
     </application>
 

@@ -1,20 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:paddingTop="16dp">
+
+    <ImageView
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:src="@drawable/artist"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:text="Drake"
-        android:textStyle="bold"
-        android:textSize="24sp"
+        android:textSize="18sp"
         android:textColor="@android:color/black"
         android:paddingLeft="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
         android:paddingBottom="8dp"
         android:id="@+id/artistOnArtistList"
+        android:layout_weight="1"
         />
 
 </LinearLayout>

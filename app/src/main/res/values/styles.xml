@@ -1,17 +1,17 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light">
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">#15959F</item>
-        <item name="colorPrimaryDark">#133046</item>
+        <item name="colorPrimary">#57C1B5</item>
+        <item name="colorPrimaryDark">#50B3AE</item>
         <item name="colorAccent">#F26144</item>
     </style>
 
-    <style name="songList" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="songList" parent="Theme.AppCompat.Light">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">#15959F</item>
-        <item name="colorPrimaryDark">#133046</item>
+        <item name="colorPrimary">#57C1B5</item>
+        <item name="colorPrimaryDark">#50B3AE</item>
         <item name="colorAccent">#F26144</item>
     </style>
 
@@ -24,8 +24,9 @@
         <item name="android:textSize">24sp</item>
         <item name="android:gravity">center_vertical</item>
         <item name="android:textAllCaps">true</item>
-        <item name="android:textColor">@android:color/black</item>
-
+        <item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">center</item>
+        <item name="android:textColor">#009688</item>
+        <item name="android:background">#FFFFFF</item>
     </style>
 
 </resources>

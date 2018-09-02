@@ -42,7 +42,16 @@ public class SongsActivity extends AppCompatActivity {
                 (R.drawable.sicko_mode)));
         songs.add(new Song("Taste","Tyga Featuring Offset",
                 (R.drawable.taste)));
-
+        songs.add(new Song("Love Lies", "Khalid & Normani",
+                (R.drawable.love_lies)));
+        songs.add(new Song("No Brainer",
+                "Dj Khaled Featuring Justin Bieber, Chance  the Rapper & Quavo",
+                (R.drawable.no_brainer)));
+        songs.add(new Song("Boo'd Up","Ella Mai", (R.drawable.bood_up)));
+        songs.add(new Song("Yes Indeed","Lil Baby & Drake",
+                (R.drawable.yes_indeed)));
+        songs.add(new Song("Young Blood", "5 Seconds Of Summer",
+                (R.drawable.love_lies)));
 
 
 
