@@ -29,5 +29,20 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(songsIntent);
             }
         });
+
+        //Find the view for the Artists category
+        CardView artists = findViewById(R.id.artists);
+
+        //Set an on click listener on the songs category
+        artists.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                //Create an Explicit Intent to open the songs activity
+                Intent artistsIntent = new Intent(MainActivity.this, ArtistsActivity.class);
+
+                startActivity(artistsIntent);
+            }
+        });
     }
 }

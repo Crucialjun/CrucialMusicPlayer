@@ -10,9 +10,9 @@
     <androidx.cardview.widget.CardView
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      app:cardCornerRadius="16dp"
       android:layout_margin="8dp"
-        android:id="@+id/songs">
+        android:id="@+id/songs"
+        android:layout_weight="1">
 
       <TextView
           android:text="Songs"
@@ -25,9 +25,9 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="16dp"
         android:layout_margin="8dp"
-        android:id="@+id/artists">
+        android:id="@+id/artists"
+        android:layout_weight="1">
 
         <TextView
             android:text="Artists"
@@ -40,9 +40,9 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="16dp"
         android:layout_margin="8dp"
-        android:id="@+id/albums">
+        android:id="@+id/albums"
+        android:layout_weight="1">
 
         <TextView
             android:text="Albums"
@@ -55,9 +55,9 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="16dp"
         android:layout_margin="8dp"
-        android:id="@+id/genres">
+        android:id="@+id/genres"
+        android:layout_weight="1">
 
         <TextView
             android:text="Genres"
@@ -70,9 +70,9 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="16dp"
         android:layout_margin="8dp"
-        android:id="@+id/playlists">
+        android:id="@+id/playlists"
+        android:layout_weight="1">
 
         <TextView
             android:text="Playlists"
